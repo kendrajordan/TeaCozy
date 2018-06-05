@@ -1,17 +1,18 @@
 *{
   color:seashell;
   font-family:"Helvetica",sans-serif;
+  opacity:0.9;
 }
 body{
   margin-top: 0;
   margin-left:0;
   background-color: black;
   font-size: 22px;
+
 }
 /*Header*/
 header{
   background-color: black;
-  opacity:0.9;
   font-size:22px;
   display:flex;
   align-items: center;
@@ -36,25 +37,26 @@ header{
   justify-content: space-between;
   padding-right:10px;
 }
+.menu span{/*Used span to space the list items.*/
+  margin-left: 15px;
+}
 .menu li{
   list-style: none;
   display:inline-block;
-  margin-left: 15px;
 }
 .menu li a{
   text-decoration: underline;
-
 }
 /*Mission */
 /*Made the mission div have the background image and centered the image. I also made mission be a flex container. */
 #mission{
+  position: relative;
+  top:70px;
   display: flex;
   height:700px;
   width:1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-image:url(/home/kendra/Developer/repos/TeaCozy/resources/images/img-mission-background.jpg);
-  margin-bottom: 70px;
 }
 .OurMission{
   background-color: black;
@@ -69,31 +71,30 @@ header{
 .OurMission h4{
   margin-bottom: 5px;
 }
-/*Month*/
+/*Featured Tea*/
 
-#featured{
+#featured{/*Flex container for the first two headers for the tea of the month*/
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 70px auto 0 auto;
   width:1000px;
   background-color: black;
 }
 #featured h2{
   margin-bottom: 0;
 }
+/*Flex container for the different teas*/
 .teas{
   width:1000px;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 70px;
+  margin:0 auto;
 }
+/*Flex items for teas*/
 .cup{
   display: block;
   text-align: center;
@@ -101,10 +102,10 @@ flex-direction: column;
 .cup img{
   height:200px;
   width:300px;
-  margin: 10px;
+  margin:0 15px;
 }
-.cup h2{
-margin:10px;
+.cup h4{
+  margin-top: 10;
 }
 /*Locations*/
 #locations{
@@ -116,12 +117,12 @@ margin:10px;
   background-image:url(/home/kendra/Developer/repos/TeaCozy/resources/images/img-locations-background.jpg);
   height: 500px;
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 70px auto 0 auto;
 }
 #locations h2{
   margin:0;
 }
+/*Flex container for the columns*/
 .columncontainer{
   display:flex;
   width:100%;
@@ -129,7 +130,7 @@ margin:10px;
   align-items:center;
 }
 .column ul{
-  margin: 0;
+  margin-top: 15px;
   padding: 0;
   height:300px;
   width:300px;
@@ -142,9 +143,6 @@ margin:10px;
   opacity: 1;
   background-color: black;
   text-align: center;
-}
-.column.eastbayside,.column.oakdale,.column.downtown{
-  margin-top:15px;
 }
 .column.eastbayside{
   margin-right: 40px;
