@@ -47,7 +47,7 @@ header{
 }
 /*Mission */
 /*Made the mission div have the background image and centered the image. I also made mission be a flex container. */
-.mission{
+#mission{
   display: flex;
   height:700px;
   width:1200px;
@@ -56,17 +56,17 @@ header{
   background-image:url(/home/kendra/Developer/repos/TeaCozy/resources/images/img-mission-background.jpg);
   margin-bottom: 70px;
 }
-#OurMission{
+.OurMission{
   background-color: black;
   align-self: center;
   text-align: center;
   width:100%;
   align-content: center;
 }
-#OurMission h2{
+.OurMission h2{
   margin-top:5px;
 }
-#OurMission h4{
+.OurMission h4{
   margin-bottom: 5px;
 }
 /*Month*/
