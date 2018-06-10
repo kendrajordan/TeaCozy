@@ -30,19 +30,17 @@ header{
   padding-left: 10px;
 }
 /*Menu list*/
-.menu{
+nav .menu{
   /*Made the menu a flex container*/
   display:flex;
   align-items: center;
   justify-content: space-between;
   padding-right:10px;
 }
-.menu span{/*Used span to space the list items.*/
-  margin-left: 15px;
-}
 .menu li{
   list-style: none;
   display:inline-block;
+  margin-left: 15px;
 }
 .menu li a{
   text-decoration: underline;
