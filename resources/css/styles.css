@@ -118,7 +118,7 @@ nav .menu{
   margin:0;
 }
 /*Flex container for the columns*/
-.columncontainer{
+.column-container{
   display:flex;
   width:100%;
   justify-content: center;
